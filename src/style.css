@@ -8,6 +8,16 @@ body{
 
 .logo{
     width: 150px;
-
 }
 
+#root{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly
+  }
+
+.filterAll{
+    margin-top: 50px;
+    justify-content: center;
+    
+}
