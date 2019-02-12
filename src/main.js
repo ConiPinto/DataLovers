@@ -15,8 +15,8 @@ let result = '';
 	    <h4>${element.title}</h4>
 	    </div>
 			
-			<h3>Autor: Without author</h3>
-			<p>Feed Label: ${element.feedlabel}</p>
+			<h5>Autor: Without author</h5>
+			<h6>Feed Label: ${element.feedlabel}</h6>
 			<h6>${element.appid}</h6>
 			
 	    </div>
@@ -30,8 +30,8 @@ let result = '';
 			<h4>${element.title}</h4>
 	    </div>
 			
-			<h3>${element.author}</h3>
-			<p>Feed Label: ${element.feedlabel}</p>
+			<h5>${element.author}</h5>
+			<h6>Feed Label: ${element.feedlabel}</h6>
 			<h6>${element.appid}</h6>
 			
 	    </div>
