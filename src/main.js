@@ -12,7 +12,7 @@ let result = '';
 	    <div>
 	    <div class='card'>
 	    <div class='box'>
-	    <h2>${element.title}</h2>
+	    <h4>${element.title}</h4>
 	    </div>
 			
 			<h3>Autor: Without author</h3>
@@ -27,7 +27,7 @@ let result = '';
 	    <div>
 	    <div class='card'>
 			<div class='box'>
-			<h2>${element.title}</h2>
+			<h4>${element.title}</h4>
 	    </div>
 			
 			<h3>${element.author}</h3>
