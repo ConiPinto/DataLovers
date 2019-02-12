@@ -15,7 +15,7 @@ let result = '';
 	    <h4>${element.title}</h4>
 	    </div>
 			
-			<h5>Autor: Without author</h5>
+			<h6><span>Autor: Without author</span></h6>
 			<h6>Feed Label: ${element.feedlabel}</h6>
 			<h6>${element.appid}</h6>
 			
@@ -30,7 +30,7 @@ let result = '';
 			<h4>${element.title}</h4>
 	    </div>
 			
-			<h5>${element.author}</h5>
+			<h6><span>${element.author}</span></h6>
 			<h6>Feed Label: ${element.feedlabel}</h6>
 			<h6>${element.appid}</h6>
 			
