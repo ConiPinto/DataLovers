@@ -51,6 +51,15 @@ body{
   span{
       background-color: #2d3d5f;
       color: white;
-      /*border-radius: 20px;*/
+      border-radius: 10px;
+      width: 600px;
+  }
+
+  .navbar-text{
       width: 300px;
+  }
+
+  h6{
+      color: grey;
+      
   }
