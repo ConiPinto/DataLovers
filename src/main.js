@@ -87,3 +87,26 @@ selectByTitle.addEventListener("change", ()=>{
 	});
 	
 	window.onload = showData(showAll);
+
+	// order
+
+orderBy.addEventListener('change', () => {
+  let orderValue = orderBy.value;
+  let ordered = window.selectOrder(showAll,orderValue);
+  //limpio div
+  rootContainer.innerHTML = '';
+  ordered.forEach(element => {
+      result = rootContainer.innerHTML += `
+      <div>
+      <div class='card'>
+      <div class='box'>
+      <h4>${element.title}</h4>
+      </div>
+      <h6><span>Autor: Without author</span></h6>
+      <h6>Feed Label: ${element.feedlabel}</h6>
+      <h6>${element.appid}</h6>
+      </div>
+      </div>
+      </div>`
+  });
+});
