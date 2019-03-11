@@ -21,7 +21,7 @@ const filterAuthor = (showAll, condition) => {
 
 //order
 
-const selectOrder = (showAll, condition) => {
+ const selectOrder = (showAll, condition) => {
   //console.log(condition);
   /* const sorted = showAll.sort((a, b) => (a[condition] > b[condition]) ? 1 : -1);
   return sorted; */

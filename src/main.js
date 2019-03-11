@@ -102,9 +102,11 @@ orderBy.addEventListener('change', () => {
       <div class='box'>
       <h4>${element.title}</h4>
       </div>
+
       <h6><span>Autor: Without author</span></h6>
       <h6>Feed Label: ${element.feedlabel}</h6>
       <h6>${element.appid}</h6>
+
       </div>
       </div>
       </div>`
