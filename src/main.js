@@ -32,7 +32,7 @@ const resultCalculate = document.getElementById("btnfilter");
 resultCalculate.addEventListener("change", ()=>{
 
 let condition = resultCalculate.value;
-let percentage = window.computerStart(showAll,condition);
+let percentage = window.computerStats(showAll,condition);
 
 calculateResult.innerHTML = "";
 
