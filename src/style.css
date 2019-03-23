@@ -22,7 +22,7 @@ body{
 
 }
 
-.container-fluid {
+.container-data{
     display: flex;
     flex-direction: row;
     align-content: flex-end;
@@ -85,4 +85,10 @@ body{
     margin-top: 50px;
   }
 
+  .resultporcentage{
+      text-align: center;
+      margin-top: 50px; 
+      color: white;
+      font-size: 100px;
+  }
  
