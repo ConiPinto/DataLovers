@@ -1,5 +1,5 @@
 const rootContainer = document.getElementById('root');
-const showAll = (STEAM.appnews.newsitems);
+const showAll = window.STEAM.appnews.newsitems;
 const selectByTitle = document.getElementById("btnfilter");
 const orderBy = document.getElementById("btnorder")
 const calculateResult = document.getElementById("calculate");
