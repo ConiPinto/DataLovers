@@ -51,5 +51,26 @@ const filterAuthor = (showAll, condition) => {
 return showAll;
 
  }
+
+const computerStats = (showAll,condition) =>{
+let counter = 0; 
+showAll.forEach(element => {
+  if(element.author.includes(condition)){
+    counter=counter+1;
+
+  }
+  
+});
+return Math.round((counter/10)*100) + "%";
+// al counter se le pasa la regla 3 para sacar el porcentaje y después se redondea con el math.round al número que está más cerca
+ };
+
+ window.filterAuthor = filterAuthor;
  window.selectOrder = selectOrder;
+ window.computerStats = computerStats;
+
+
+
+
+
 
