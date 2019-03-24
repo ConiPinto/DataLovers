@@ -103,7 +103,7 @@ body{
      font-family: 'Open Sans', sans-serif;
  }
 
- .filterAll{
+ .filterAll, .orderAll{
     width: 152px;
     height: 30px;
     background: -webkit-linear-gradient(90deg, #041e27 10%, #93e2fc  90%);
