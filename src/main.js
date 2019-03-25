@@ -5,6 +5,15 @@ const orderBy = document.getElementById("btnorder")
 const calculateResult = document.getElementById("calculate");
 
 const showData = showAll => {
+
+	let average = window.average(showAll);
+  calculateResult.innerHTML = '';
+  calculateResult.innerHTML += `
+<div>
+<h3>El promedio es ${average} %</h3>
+</div>`; 
+
+
   let result = '';
   showAll.forEach(element => {
    // if (element.author === '' && element.feedlabel !== '') {
@@ -49,7 +58,7 @@ return result;
 window.onload = showData(showAll);*/
 
 
-const resultCalculate = document.getElementById("btnfilter");
+/*const resultCalculate = document.getElementById("btnfilter");
 resultCalculate.addEventListener("change", ()=>{
 
 let condition = resultCalculate.value;
@@ -61,12 +70,21 @@ calculateResult.innerHTML+= `
 <div>
 <h3>La cantidad de tarjetas mostradas es de un ${percentage}</h3>
 </div>`
-})
+})*/
 //filter
 
 selectByTitle.addEventListener("change", ()=>{
 let condition = selectByTitle.value;
 let filtered = window.filterAuthor(showAll,condition);
+
+let average = window.average(filtered);
+  calculateResult.innerHTML = '';
+  calculateResult.innerHTML += `
+<div>
+<h3>El promedio es ${average} %</h3>
+</div>`; 
+
+
 rootContainer.innerHTML = '';
 filtered.forEach(element => {
 if (element.author === '' && element.feedlabel !== '') {
@@ -78,6 +96,7 @@ rootContainer.innerHTML += `
 </div>
 <h6><span>Autor: Without author</span></h6>
 <h6>Feed Label: ${element.feedlabel}</h6>
+<h6>Level: ${element.level}</h6>
 <h6>${element.appid}</h6>
 </div>
 </div>
@@ -91,6 +110,7 @@ rootContainer.innerHTML += `
 </div>
 <h6><span>${element.author}</span></h6>
 <h6>Feed Label: ${element.feedlabel}</h6>
+<h6>Level: ${element.level}</h6>
 <h6>${element.appid}</h6>
 </div>
 </div>
@@ -117,6 +137,7 @@ rootContainer.innerHTML += `
 </div>
 <h6><span>Autor: Without author</span></h6>
 <h6>Feed Label: ${element.feedlabel}</h6>
+<h6>Level: ${element.level}</h6>
 <h6>${element.appid}</h6>
 </div>
 </div>
