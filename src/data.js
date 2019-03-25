@@ -52,7 +52,14 @@ return showAll;
 
  }
 
-const computerStats = (showAll,condition) =>{
+ const average = showAll => {
+  let calc = showAll.reduce((acum, element) => {
+    return acum + element.level;
+  }, 0);
+  return calc / 10;
+};
+
+/*const computerStats = (showAll,condition) =>{
 let counter = 0; 
 showAll.forEach(element => {
   if(element.author.includes(condition)){
@@ -63,11 +70,12 @@ showAll.forEach(element => {
 });
 return Math.round((counter/10)*100) + "%";
 // al counter se le pasa la regla 3 para sacar el porcentaje y después se redondea con el math.round al número que está más cerca
- };
+ }; */
 
  window.filterAuthor = filterAuthor;
  window.selectOrder = selectOrder;
- window.computerStats = computerStats;
+ //window.computerStats = computerStats;
+ window.average = average;
 
 
 
